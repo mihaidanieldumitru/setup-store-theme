@@ -11,7 +11,8 @@
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
-      "newsletter"
+      "newsletter",
+      "flex-layout.row#test-minicart"
     ]
   },
 
@@ -98,6 +99,20 @@
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
+    }
+  },
+
+  "flex-layout.row#test-minicart": {
+    "children": ["flex-layout.col#test-minicart"],
+    "props": {
+      "blockClass": "minicartTest"
+    }
+  },
+
+  "flex-layout.col#test-minicart": {
+    "children": ["minicart-product-list", "flex-layout.row#minicart-footer"],
+    "props": {
+      "blockClass": "minicartTest"
     }
   }
 }
